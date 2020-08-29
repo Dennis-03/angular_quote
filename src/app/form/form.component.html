@@ -13,6 +13,7 @@
       placeholder="company_name"
       name="company_name"
       id="company_name"
+      ng-model="first"
     />
     <input
       type="text"
@@ -44,7 +45,7 @@
   <div>
     <div>
       <h6>Bill TO :</h6>
-      <h6>Title firstname lastname</h6>
+      <h6 ng-bind="first"></h6>
       <p>address</p>
       <p>address</p>
       <p>email</p>
