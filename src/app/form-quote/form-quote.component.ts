@@ -12,8 +12,11 @@ export class FormQuoteComponent implements OnInit {
 
   ngOnInit(): void {
     this.quote = this.fb.group({
+      company_name: '',
       email: '',
       phone: '',
+      address_line1: '',
+      address_line2: '',
     });
     this.quote.valueChanges.subscribe(console.log);
   }

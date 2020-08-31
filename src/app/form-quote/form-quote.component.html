@@ -39,7 +39,12 @@ Value :{{ quote.value | json }}
       formControlName="quote_no"
       id="quote_no"
     />
-    <input type="date" formControlName="date" id="date" />
+    <input
+      type="date"
+      placeholder="yyyy-mm-dd"
+      formControlName="date"
+      id="date"
+    />
   </div>
   <div>
     <p>subtotal<span>12345</span></p>
@@ -52,11 +57,11 @@ Value :{{ quote.value | json }}
   <div>
     <div>
       <h6>Bill TO :</h6>
-      <h6 ng-bind="first"></h6>
-      <p>address</p>
-      <p>address</p>
-      <p>email</p>
-      <p>phone</p>
+      <h5>{{ quote.value.address_line1 }}</h5>
+      <p>{{ quote.value.address_line2 }}</p>
+      <p>{{ quote.value.company_name }}</p>
+      <p>{{ quote.value.email }}</p>
+      <p>{{ quote.value.phone }}</p>
     </div>
     <div>
       <h6>Project Description</h6>
