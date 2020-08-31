@@ -7,13 +7,8 @@ import { FormComponent } from './form/form.component';
 import { FormQuoteComponent } from './form-quote/form-quote.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    FormComponent,
-    FormQuoteComponent,
-    ReactiveFormsModule,
-  ],
-  imports: [BrowserModule],
+  declarations: [AppComponent, FormComponent, FormQuoteComponent],
+  imports: [BrowserModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
