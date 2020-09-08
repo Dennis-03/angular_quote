@@ -1,7 +1,7 @@
 <form [formGroup]="quote">
   <p>
     <mat-form-field appearance="outline">
-      <mat-label>Outline form field</mat-label>
+      <mat-label>company_name</mat-label>
       <input
         matInput
         type="text"
@@ -12,51 +12,86 @@
       />
     </mat-form-field>
   </p>
-  <!-- <div>
-    <input
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>address_line1</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="address_line1"
+        formControlName="address_line1"
+        id="address_line1"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>address_line2</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="address_line2"
+        formControlName="address_line2"
+        id="address_line2"
+      />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>email</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="email"
+        formControlName="email"
+        id="email"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>phone</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="phone"
+        formControlName="phone"
+        id="phone"
+      />
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>quote_no</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="quote_no"
+        formControlName="quote_no"
+        id="quote_no"
+      />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline">
+      <mat-label>date</mat-label>
+      <input
+        matInput
+        type="date"
+        placeholder="yyyy-mm-dd"
+        formControlName="date"
+        id="date"
+      />
+    </mat-form-field>
+  </p>
+  <mat-divider></mat-divider>
+  <mat-divider></mat-divider>
+
+  <!-- <input
       type="file"
       id="avatar"
       formControlName="avatar"
       accept="image/png, image/jpeg"
     />
-  </div>
-  <div>
-    <input
-      type="text"
-      placeholder="company_name"
-      formControlName="company_name"
-      id="company_name"
-      ng-model="first"
-    />
-    <input
-      type="text"
-      placeholder="address_line1"
-      formControlName="address_line1"
-      id="address_line1"
-    />
-    <input
-      type="text"
-      placeholder="address_line2"
-      formControlName="address_line2"
-      id="address_line2"
-    />
-    <input type="text" placeholder="email" formControlName="email" id="email" />
-    <input type="text" placeholder="phone" formControlName="phone" id="phone" />
-  </div>
-  <div>
-    <input
-      type="text"
-      placeholder="quote_no"
-      formControlName="quote_no"
-      id="quote_no"
-    />
-    <input
-      type="date"
-      placeholder="yyyy-mm-dd"
-      formControlName="date"
-      id="date"
-    />
   </div> -->
+
   <div>
     <p>subtotal<span>12345</span></p>
     <p>tax1 <span>55</span>%</p>
