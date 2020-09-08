@@ -1,6 +1,18 @@
-<!-- Value :{{ quote.value | json }} -->
 <form [formGroup]="quote">
-  <div>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input
+        matInput
+        type="text"
+        placeholder="company_name"
+        formControlName="company_name"
+        id="company_name"
+        ng-model="first"
+      />
+    </mat-form-field>
+  </p>
+  <!-- <div>
     <input
       type="file"
       id="avatar"
@@ -44,7 +56,7 @@
       formControlName="date"
       id="date"
     />
-  </div>
+  </div> -->
   <div>
     <p>subtotal<span>12345</span></p>
     <p>tax1 <span>55</span>%</p>
