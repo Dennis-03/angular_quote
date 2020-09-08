@@ -17,6 +17,7 @@ export class FormQuoteComponent implements OnInit {
       phone: '',
       address_line1: '',
       address_line2: '',
+      date: '',
     });
     this.quote.valueChanges.subscribe(console.log);
   }
