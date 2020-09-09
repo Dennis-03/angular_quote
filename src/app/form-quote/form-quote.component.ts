@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, FormArray } from '@angular/forms';
 
 @Component({
   selector: 'app-form-quote',
@@ -19,7 +19,27 @@ export class FormQuoteComponent implements OnInit {
       address_line2: '',
       quote_no: '',
       date: '',
+      items: this.fb.array([]),
     });
+
     this.quote.valueChanges.subscribe(console.log);
+    this.addItem();
+  }
+  get itemForms() {
+    return this.quote.get('items') as FormArray;
+  }
+
+  addItem() {
+    const item = this.fb.group({
+      description: [],
+      quantity: [],
+      pricePerQuantity: [],
+      total: [],
+    });
+    this.itemForms.push(item);
+  }
+
+  deleteItem(i) {
+    this.itemForms.removeAt(i);
   }
 }

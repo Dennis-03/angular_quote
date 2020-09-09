@@ -8,12 +8,11 @@ import { MatCardModule } from '@angular/material/card';
 
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
-import { FormComponent } from './form/form.component';
 import { FormQuoteComponent } from './form-quote/form-quote.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 @NgModule({
-  declarations: [AppComponent, FormComponent, FormQuoteComponent],
+  declarations: [AppComponent, FormQuoteComponent],
   imports: [
     FormsModule,
     BrowserModule,
